@@ -21,15 +21,11 @@ body{
 
 .main-content {
 	/*padding-top: 100px;*/
-	padding: 70px;
-	margin: 50px;
+	padding: 20px;
+	margin: 10px;
 	/*text-align: justify;*/
 	font-family: cursive, sans-serif;
 	font-size: 20px;
-
-
-
-
 }
 label {
 	display:block;
@@ -69,6 +65,7 @@ button:hover {
 	padding: 10px;
 	/*margin: auto;*/
 	list-style: none;
+	/*width: 100%;*/
 }
 
  form {
@@ -76,23 +73,52 @@ button:hover {
     width: 100%;
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;   
+    padding: 10px;   
 }
 
 li {
+	display: flex;
+	align-items: center;
+
+
+	/*display: block;*/
     cursor: pointer;
-    position: relative;
+    /*position: relative;*/
     /*padding-left: : 10px;*/
     background: #eee000;
     font-size: 18px;
     transition: 0.2s;
+    border-style: inset;
     border-radius: 5px;
+    word-wrap: break-word;
+    float: left;
+    width: 100%;
 }
 
 li:hover {
     background: #ddd;
 }
-.close {
+
+.close-to-do {
+
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 25px;
+	color: darkred;
+	transition: .5s;
+
+}
+
+.close-to-do:hover{
+	color: black;
+}
+
+
+
+
+
+/*.close {
 		padding-left: 10px;
 		padding-right: 10px;
 	    position: absolute;
@@ -101,4 +127,4 @@ li:hover {
 
 .close:hover {
     background-color: white;   
-}
+}*/
