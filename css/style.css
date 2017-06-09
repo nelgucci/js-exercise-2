@@ -67,6 +67,8 @@ button:hover {
 
 .lists{
 	padding: 10px;
+	/*margin: auto;*/
+	list-style: none;
 }
 
  form {
@@ -74,6 +76,29 @@ button:hover {
     width: 100%;
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;
-    
+    padding: 20px;   
+}
+
+li {
+    cursor: pointer;
+    position: relative;
+    /*padding-left: : 10px;*/
+    background: #eee000;
+    font-size: 18px;
+    transition: 0.2s;
+    border-radius: 5px;
+}
+
+li:hover {
+    background: #ddd;
+}
+.close {
+		padding-left: 10px;
+		padding-right: 10px;
+	    position: absolute;
+   		right: 10px;
+}
+
+.close:hover {
+    background-color: white;   
 }

@@ -16,10 +16,22 @@ var userSubmit = document.querySelector('#user-submit');
 //     list.insertBefore(newItem, list.childNodes[0]);
 // }
 
-
 function addToDo(event){
 	event.preventDefault();
 	// console.log(event);
+	//---------------------------------------------
+	// var myNodelist = document.getElementsByTagName("LI");
+	// var i;
+	// for (i = 0; i < myNodelist.length; i++) {
+ //  		var span = document.createElement("#user-submit");
+ //  		var txt = document.createTextNode("\u00D7");
+ //  		span.className = "close";
+ //  		span.appendChild(txt);
+ //  		myNodelist[i].appendChild(span);
+	// }
+
+
+	//----------------------------------------------
 
 	var userInput = document.querySelector('#user-input');
 	var toDoList = document.querySelector('#to-do-list');
@@ -38,12 +50,15 @@ function addToDo(event){
 
 	
 
-	toDoList.innerHTML = '<li>' + userInput.value + '</li>';
+toDoList.innerHTML = '<li>' + userInput.value + '<span class ="close">' +  "\u00D7" + '</span>' + '</li>' + toDoList.innerHTML;
+	//toDoList.innerHTML = '<li>' + userInput.value +  "\u00D7" + '</li>' + toDoList.innerHTML;
 
 	userInput.value = '';
 
-}
 
+//----------------------------------------------------
+	var close = document.getElementsByClassName("close");
+}
 
 
 
